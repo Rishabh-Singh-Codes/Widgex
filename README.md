@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/86565216/133892819-8eb7778e-c633-4357-bfc2-21eb9a04e2a1.png)
 
 
-Widgex provides productivity and utility tools, required during building projects, daily work and for general purposes.
+Widgex provides productivity and utility tools also known as Widgets, required during building projects, daily work and for general purposes.
 
 ## Website Overlay
 ### Home
