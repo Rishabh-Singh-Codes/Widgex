@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Widgex</title>
+</head>
+
+<body onload="initClock() ">
+    <nav>
+        <div class="logo">
+            <h4>WIDGEX</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#draw">Draw-Pad</a></li>
+            <li><a href="#calc">Calculator</a></li>
+            <li><a href="#alarm">Alarm</a></li>
+        </ul>
+        <div class="lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="about">
+        <div id="about"></div>
+    </div>
+
+    <div class="pageGrid">
+        <div class="clockGrid">
+            <h2>clock</h2>
+            <div class="datetime">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="daynum">00</span>
+                    <span id="month">Month</span>
+                    <span id="year">Year</span>
+                </div>
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+        </div>
+        <div class="notes">
+            <h2>todos</h2>
+            <div class="form-div">
+                <form id="form">
+                    <input type="text" class="input" id="input" placeholder="Enter your todo task !">
+                </form>
+                <ul class="todos" id="todos">
+
+                    <small>Left click to mark 'Done'<br> Right click to delete task.</small>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="draw" id="draw">
+            <h2>drawing pad</h2>
+            <div class="field">
+                <canvas id="canvas"></canvas>
+                <div class="tools">
+                    <button type="button" class="button" onclick="Restore()">Undo</button>
+                    <button type="button" class="button" onclick="Clear()">Clear</button>
+
+                    <div class="color-field" onclick="change_color(this)" style="background: red;"></div>
+                    <div class="color-field" onclick="change_color(this)" style="background: green;"></div>
+                    <div class="color-field" onclick="change_color(this)" style="background: blue;"></div>
+                    <div class="color-field" onclick="change_color(this)" style="background: yellow;"></div>
+
+                    <input type="color" oninput="stroke_color = this.value" class="color-picker">
+                    <input type="range" min="1" max="30" oninput="stroke_width = this.value" class="pen-range">
+                </div>
+            </div>
+
+        </div>
+        <div class="calculator" id="calc">
+            <h2>calculator</h2>
+            <div class="container">
+                <div id="display"></div>
+                <div class="buttons">
+                    <div class="calbutton">C</div>
+                    <div class="calbutton">(</div>
+                    <div class="calbutton">)</div>
+                    <div class="calbutton">&larr;</div>
+                    <div class="calbutton">7</div>
+                    <div class="calbutton">8</div>
+                    <div class="calbutton">9</div>
+                    <div class="calbutton">/</div>
+                    <div class="calbutton">4</div>
+                    <div class="calbutton">5</div>
+                    <div class="calbutton">6</div>
+                    <div class="calbutton">*</div>
+                    <div class="calbutton">1</div>
+                    <div class="calbutton">2</div>
+                    <div class="calbutton">3</div>
+                    <div class="calbutton">-</div>
+                    <div class="calbutton">0</div>
+                    <div class="calbutton">.</div>
+                    <div id="equal" class="calbutton">=</div>
+                    <div class="calbutton">+</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="alarm" id="alarm">
+            <h2>alarm</h2>
+            <div class="alacontainer">
+                <input type="datetime-local" id="time">
+                <button id="alarmBtn" type="button" onclick="setAlarm(this);">Set Alarm</button>
+                <div id="alarmOptions">
+                    <button type="button" onclick="snooze(this)">Snooze for 5 minutes</button>
+                    <button type="button" onclick="stopAlarm(this)">Stop Alarm</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Made with <img src="Images/hart.gif" class="heart"> by <a
+                href="https://www.linkedin.com/in/rishabh8singh/"><b>Rishabh Singh</b></a>||<a href="https://www.linkedin.com/in/rishabh8singh/"><img src="images/linkedIn.png" class="ft-img"></a>||
+            <a href="https://github.com/Rishabh-Singh-Codes?tab=repositories"><img src="images/github.png"
+                    class="ft-img" alt="github"></a>
+        </p>
+        </footer>
+    </div>
+    
+
+    <script src="navi.js"></script>
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+    <script src="draw.js"></script>
+    <script src="calc.js"></script>
+    <script src="alarm.js"></script>
+    <script src="about.js"></script>
+
+</body>
+
+</html>
