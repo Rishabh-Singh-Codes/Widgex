@@ -27,7 +27,7 @@ var alarmSound = new Audio();
 		function startAlarm() {
 			alarmSound.play();
 			alarmOptions.style.display = '';
-            alert('Press Stop alarm button to stop the alarm sound!');
+            
 		};
 
 		function cancelAlarm(button) {
