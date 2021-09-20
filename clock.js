@@ -9,13 +9,14 @@ function updateClock(){
         sec=now.getSeconds(),
     pe="AM";
 
-    if(hou==0){
-        hou=12;
+    if(hou >= 12){
+            pe = "PM";
     }
-
-    if(hou>12){
-        hou=hou-12;
-        pe="PM";
+    if(hou == 0){
+            hou = 12;
+    }
+    if(hou > 12){
+            hou = hou - 12;
     }
 
     Number.prototype.padd=function(digits){
