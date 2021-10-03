@@ -1,10 +1,10 @@
-# WIDGEX
+# WIDGEX 	:toolbox:
 ![image](https://user-images.githubusercontent.com/86565216/133892819-8eb7778e-c633-4357-bfc2-21eb9a04e2a1.png)
 
 
 Widgex provides productivity and utility tools also known as Widgets, required during building projects, daily work and for general purposes.
 
-## Website Overlay
+## Website Overlay :computer:
 ### Home
 When the site is loaded first the following home screen appears:
 ![image](https://user-images.githubusercontent.com/86565216/133892840-a3712d24-4128-4517-9946-31d7265ef54a.png)
@@ -50,12 +50,15 @@ You can set targets and get an alert using this alarm clock. You also have the o
 Navigation bar slides in from the right incase of small screen devices. The footer provides developer details and social media links.
 
 
-## Technology Stack
+## Technology Stack :electron:
 This site is made using following tech stacks:
 * HTML
 * CSS
 * JavaScript
 
-## Project Link
+## Project Link :link:
 https://widgex.netlify.app/
 
+## Developer 	:man_technologist:
+Rishabh Singh : 
+https://www.linkedin.com/in/rishabh8singh/
