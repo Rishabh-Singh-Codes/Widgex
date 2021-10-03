@@ -57,6 +57,7 @@ This site is made using following tech stacks:
 * JavaScript
 
 ## Project Link :link:
+The project is hosted through Netlify and can be accessed through:
 https://widgex.netlify.app/
 
 ## Developer 	:man_technologist:
